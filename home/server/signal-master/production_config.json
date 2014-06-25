@@ -1,0 +1,24 @@
+{
+    "isDev": false,
+    "logLevel": 1,
+    "server": {
+        "port": 8080
+    },
+    "stunservers" : [
+        {
+            "url": "stun:54.187.216.200:80"
+        }
+    ],
+    "turnservers" : [
+        {
+            "url": "turn:54.187.216.200:80",
+            "secret": "coTrainTurn128",
+            "expiry": 86400
+        },
+        {
+            "url": "turn:54.187.216.200:80?transport=tcp",
+            "secret": "coTrainTurn128",
+            "expiry": 86400
+        }
+    ]
+}
